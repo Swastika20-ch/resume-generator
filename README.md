@@ -1,39 +1,65 @@
 # Resume Generator
 
-A Full Stack Resume Generator built using React, Node.js, Express, MongoDB and PDF Export functionality.
+A Full Stack Resume Generator built using React, Node.js, Express, MongoDB Atlas, and PDF Export functionality.
 
-## Features
+## Live Demo
 
-- Create professional resumes instantly
-- Live resume preview
-- Multiple Experience sections
-- Multiple Project sections
-- Multiple Certificate sections
-- Save resume data to MongoDB Atlas
-- Download resume as PDF
-- Modern Overleaf-inspired UI
-- Responsive Design
+### Frontend
+
+https://resume-generator-gamma-two.vercel.app
+
+### Backend API
+
+https://resume-generator-api-z12v.onrender.com
 
 ---
 
-## Tech Stack
+## Overview
+
+Resume Generator is a web application that allows users to create professional resumes with a modern interface, preview them in real-time, save them to MongoDB Atlas, and download them as PDF documents.
+
+---
+
+## Features
+
+* Real-time Resume Preview
+* Professional Resume Layout
+* Dynamic Experience Sections
+* Dynamic Project Sections
+* Dynamic Certificate Sections
+* Technical Skills Section
+* Achievements Section
+* MongoDB Database Integration
+* Save Resume Functionality
+* PDF Download Support
+* Responsive Design
+* Modern User Interface
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
-- React.js
-- Vite
-- CSS3
+
+* React.js
+* Vite
+* CSS3
+* html2pdf.js
 
 ### Backend
-- Node.js
-- Express.js
+
+* Node.js
+* Express.js
 
 ### Database
-- MongoDB Atlas
-- Mongoose
 
-### Additional Libraries
-- Axios
-- html2pdf.js
+* MongoDB Atlas
+* Mongoose
+
+### Other Libraries
+
+* Axios
+* html2pdf.js
 
 ---
 
@@ -43,6 +69,7 @@ A Full Stack Resume Generator built using React, Node.js, Express, MongoDB and P
 resume-generator/
 │
 ├── client/
+│   ├── public/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── ResumeForm.jsx
@@ -63,9 +90,12 @@ resume-generator/
 │   │   └── resumeRoutes.js
 │   │
 │   ├── server.js
+│   ├── .env
 │   └── package.json
 │
-└── README.md
+├── .gitignore
+├── README.md
+└── package.json
 ```
 
 ---
@@ -98,44 +128,57 @@ node server.js
 
 ## Environment Variables
 
-Create a .env file inside server folder.
+Create a `.env` file inside the `server` folder:
 
 ```env
 MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
+PORT=5000
 ```
 
 ---
 
-## Screenshots
+## Database
 
-- Resume Builder Interface
-- Live Resume Preview
-- PDF Export Feature
+The project uses MongoDB Atlas to store:
+
+* Personal Information
+* Education Details
+* Experience Records
+* Projects
+* Certificates
+* Skills
+* Achievements
+
+---
+
+## PDF Export
+
+Users can generate and download resumes in PDF format directly from the application.
 
 ---
 
 ## Future Improvements
 
-- User Authentication
-- Multiple Resume Templates
-- ATS Score Checker
-- Resume Sharing Link
-- Resume Analytics
-- Portfolio Integration
+* User Authentication
+* Multiple Resume Templates
+* ATS Resume Checker
+* Resume Sharing Links
+* Portfolio Integration
+* Dark/Light Themes
+* Resume Analytics Dashboard
 
 ---
 
 ## Author
-
 **Swastika Chatterjee**
 
-Computer Science Engineering Student  
+B.Tech Computer Science and Engineering
 KIIT University
 
-GitHub:
-https://github.com/Swastika20-ch
-
-LinkedIn:
-https://www.linkedin.com
+GitHub: https://github.com/Swastika20-ch
 
 ---
+
+## Support
+
+If you found this project useful, consider giving the repository a star.
