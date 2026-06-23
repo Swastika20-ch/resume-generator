@@ -1,16 +1,141 @@
-# React + Vite
+# Resume Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Full Stack Resume Generator built using React, Node.js, Express, MongoDB and PDF Export functionality.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Create professional resumes instantly
+- Live resume preview
+- Multiple Experience sections
+- Multiple Project sections
+- Multiple Certificate sections
+- Save resume data to MongoDB Atlas
+- Download resume as PDF
+- Modern Overleaf-inspired UI
+- Responsive Design
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+- React.js
+- Vite
+- CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB Atlas
+- Mongoose
+
+### Additional Libraries
+- Axios
+- html2pdf.js
+
+---
+
+## Project Structure
+
+```bash
+resume-generator/
+│
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ResumeForm.jsx
+│   │   │   ├── ResumePreview.jsx
+│   │   │   └── DownloadButton.jsx
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+├── server/
+│   ├── models/
+│   │   └── Resume.js
+│   │
+│   ├── routes/
+│   │   └── resumeRoutes.js
+│   │
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Swastika20-ch/resume-generator.git
+```
+
+### Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### Backend Setup
+
+```bash
+cd server
+npm install
+node server.js
+```
+
+---
+
+## Environment Variables
+
+Create a .env file inside server folder.
+
+```env
+MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
+```
+
+---
+
+## Screenshots
+
+- Resume Builder Interface
+- Live Resume Preview
+- PDF Export Feature
+
+---
+
+## Future Improvements
+
+- User Authentication
+- Multiple Resume Templates
+- ATS Score Checker
+- Resume Sharing Link
+- Resume Analytics
+- Portfolio Integration
+
+---
+
+## Author
+
+**Swastika Chatterjee**
+
+Computer Science Engineering Student  
+KIIT University
+
+GitHub:
+https://github.com/Swastika20-ch
+
+LinkedIn:
+https://www.linkedin.com
+
+---
