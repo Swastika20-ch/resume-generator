@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#071328;
+  color:white;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* APP */
+
+.app-container{
+  width:100%;
+  min-height:100vh;
+  padding:25px;
+}
+
+.main-title{
+  text-align:center;
+  font-size:52px;
+  font-weight:800;
+  color:white;
+  margin-bottom:25px;
+  letter-spacing:-1px;
+}
+
+/* MAIN LAYOUT */
+
+.content-container{
+  width:95%;
+  max-width:1700px;
+  margin:auto;
+
+  display:flex;
+  gap:35px;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.left-panel{
+  flex:0 0 45%;
+  max-width:700px;
+}
+
+.right-panel{
+  flex:0 0 55%;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* FORM */
+
+.form-card{
+  width:100%;
+
+  background:#24324e;
+
+  border-radius:20px;
+
+  padding:35px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.25);
+}
+
+.form-card h2{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+.form-card h3{
+  font-size:22px;
+  margin-top:30px;
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.form-card input,
+.form-card textarea{
+  width:100%;
+
+  background:#081533;
+
+  border:1px solid #324b77;
+
+  color:white;
+
+  border-radius:10px;
+
+  padding:14px 18px;
+
+  margin-bottom:12px;
+
+  font-size:15px;
+
+  outline:none;
+}
+
+.form-card textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder{
+  color:#98add3;
+}
+
+.form-card input:focus,
+.form-card textarea:focus{
+  border-color:#4f8cff;
+}
+
+/* BUTTONS */
+
+.download-btn{
+  width:260px;
+  height:55px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#22c55e;
+
+  color:white;
+
+  font-size:17px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  margin-bottom:20px;
+
+  align-self:flex-end;
+
+  transition:.3s;
+}
+
+.download-btn:hover{
+  transform:translateY(-2px);
+}
+
+.save-btn{
+  width:100%;
+
+  background:#22c55e;
+
+  color:white;
+
+  border:none;
+
+  border-radius:10px;
+
+  padding:14px;
+
+  margin-top:10px;
+
+  margin-bottom:15px;
+
+  font-size:15px;
+
+  font-weight:700;
+
+  cursor:pointer;
+}
+
+.delete-btn{
+  width:100%;
+
+  background:#ef4444;
+
+  color:white;
+
+  border:none;
+
+  border-radius:10px;
+
+  padding:12px;
+
+  margin-top:8px;
+
+  cursor:pointer;
+}
+
+.dynamic-section{
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:12px;
+
+  padding:12px;
+
+  margin-bottom:15px;
+}
+
+/* RESUME */
+
+.resume-card{
+  width:100%;
+  max-width:850px;
+
+  min-height:1100px;
+
+  background:white;
+
+  color:black;
+
+  padding:55px;
+
+  border-radius:4px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.25);
+}
+
+/* HEADER */
+
+.resume-header{
+  text-align:center;
+  margin-bottom:12px;
+}
+
+.resume-header h1{
+  font-size:28px;
+  font-weight:600;
+  color:black;
+  margin-bottom:0;
+  line-height:1;
+  letter-spacing:-0.5px;
+}
+
+.resume-contact{
+  color:#444;
+  font-size:11px;
+  line-height:1.1;
+  margin-bottom:2px;
+}
+
+.resume-contact a{
+  color:#0a66c2;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.resume-contact a:hover{
+  text-decoration:underline;
+}
+
+.resume-links{
+  color:#666;
+  font-size:11px;
+  line-height:1.1;
+}
+
+/* SECTIONS */
+
+.resume-section{
+  margin-top:15px;
+}
+
+.resume-section h2{
+  font-size:18px;
+
+  color:black;
+
+  font-weight:700;
+
+  border-bottom:1px solid black;
+
+  padding-bottom:4px;
+
+  margin-bottom:10px;
+
+  text-align:left;
+}
+
+.resume-section p{
+  color:#222;
+  line-height:1.6;
+  font-size:15px;
+  text-align:left;
+}
+
+.resume-item{
+  margin-bottom:14px;
+  text-align:left;
+}
+
+.item-title{
+  font-size:16px;
+  font-weight:500;
+  color:black;
+  text-align:left;
+}
+
+.item-subtitle{
+  font-size:15px;
+  color:#555;
+  margin-top:2px;
+  text-align:left;
+}
+
+.item-date{
+  font-size:13px;
+  color:#888;
+  margin-top:2px;
+  margin-bottom:4px;
+  text-align:left;
+}
+
+/* MOBILE */
+
+@media(max-width:1200px){
+
+  .content-container{
+    flex-direction:column;
+  }
+
+  .left-panel,
+  .right-panel{
+    width:100%;
+    max-width:none;
+  }
+
+  .resume-card{
+    max-width:100%;
+  }
+
+  .download-btn{
+    align-self:center;
+  }
+}
